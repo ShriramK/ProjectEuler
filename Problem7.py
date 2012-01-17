@@ -2,6 +2,8 @@
 
 #What is the 10 001st prime number?
 
+#Find a way to optimize it further or a different approach to solve it in milliseconds.
+
 def problemSeven():
 	primes = []
 	primes.append(2)
@@ -21,3 +23,4 @@ def problemSeven():
 			break
 	print primes[10000]
 problemSeven()
+#104743
