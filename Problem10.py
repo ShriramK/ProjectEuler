@@ -89,6 +89,48 @@ def problemTen():
 				div = 3
 			else:
 				div += 2 #only account for odd numbers
+#another version, an attempt to optimize
+#The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
+
+#Find the sum of all the primes below two million.
+#2 and check odd numbers below two million
+import time
+def problemTen():
+	total = 0
+	temp = []
+	d = {}
+	start = time.time()
+	print start
+
+	#only store odd numbers and figure out primes from it
+	for i in range(3, 2000000+1, 2):
+		#temp.append([i,-1])
+		d[i] =-1
+	#print len(temp)
+	#newTot = 2
+	total += 2
+	
+	#for i in range(0, len(temp)):#2000000):
+	for i in range(3, 2000000+1, 2):
+		#if temp[i][1] == -1:
+		if d[i] == -1:
+			total += i
+			#cnt =0
+			#for j in range(temp[i][0], 1000000, 2*temp[i][0]):
+				#if j % 2 != 0:
+			for j in range(2*i, 2000000, i):
+					#print j
+					#cnt +=1 
+					#print cnt
+					#temp[j][1] = 0	
+					d[j+i] = 0
+	end = time.time()
+	print end
+
+	print end-start
+	print total
+problemTen()
+#2.01 seconds
 """
 problemTen()
 #142913828922
