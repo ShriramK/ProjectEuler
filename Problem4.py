@@ -14,3 +14,5 @@ def problemFour():
 			
 problemFour()
 #906609
+#sys:1: DeprecationWarning: Non-ASCII character '\xd7' in file Problem4.py on line 1, but no encoding declared; see http://www.python.org/peps/pep-0263.html for details
+#http://docs.python.org/howto/unicode.html
