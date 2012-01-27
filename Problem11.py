@@ -2,7 +2,6 @@
 #22 March 2002
 
 #Work out the first ten digits of the sum of the following one-hundred 50-digit numbers.
-import sys
 def problemEleven():
 	#create a list of 100 strings of length 50
 	ans = ""
@@ -23,5 +22,6 @@ def problemEleven():
 	ans = str(carry) + ans
 	print ans[:10]
 	input.close()
+
 problemEleven()
 #5537376230
