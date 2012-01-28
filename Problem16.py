@@ -9,9 +9,8 @@ def problemSixteen():
 	num = 1
 	for i in range(0,1000):
 		num*=2
-	strnum = str(num)
 	sum = 0
-	for digit in strnum:
+	for digit in str(num):
 		sum += int(digit)
 	print sum
 
