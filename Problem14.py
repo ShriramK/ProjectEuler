@@ -21,8 +21,8 @@ def problemFourteen():
 	
 	start = time.time()
 	print start
-	
-	for number in range(2, 1000000):
+
+	for number in range(3, 1000000,2):
 		num = number
 		length = 0
 		while num != 1:
@@ -36,7 +36,10 @@ def problemFourteen():
 			ans = number
 	end = time.time()
 	print end
-
-	print end-start
+	print end-start	
+	
+	print 'ans ' , ans
 
 problemFourteen()
+#837799
+#runtime - ~38seconds -> can it be optimized further to reduce runtime / found a solution?
