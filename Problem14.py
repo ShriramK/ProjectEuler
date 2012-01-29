@@ -43,3 +43,4 @@ def problemFourteen():
 problemFourteen()
 #837799
 #runtime - ~38seconds -> can it be optimized further to reduce runtime / found a solution?
+#reduced to 20 seconds considering odd numbers only
