@@ -45,5 +45,6 @@ def countDivisors(num):
 		else:
 			div += 2 #only account for odd numbers
 	return primes
+
 problemFive()
 #232792560

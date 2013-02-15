@@ -14,5 +14,6 @@ def problemSix():
 	for i in range(1,101):
 		tot -= i*i
 	print tot
+
 problemSix()
 #25164150

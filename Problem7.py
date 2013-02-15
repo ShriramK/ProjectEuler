@@ -7,7 +7,7 @@
 def problemSeven():
 	primes = []
 	primes.append(2)
-	num = 3 
+	num = 3
 	while True:
 		val = True
 		for i in primes:
@@ -22,5 +22,6 @@ def problemSeven():
 		if len(primes) == 10001:
 			break
 	print primes[10000]
+
 problemSeven()
 #104743

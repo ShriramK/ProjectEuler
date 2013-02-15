@@ -17,6 +17,7 @@ def problemThree():
 		else:
 			div += 2 #only account for odd numbers
 	print primes[len(primes)-1]
-	print primes
+	print primes	
 problemThree()
 #6857
+
