@@ -26,5 +26,5 @@ def problem_nine():
 					print i * j * k
 					#sys.exit(1)
 problem_nine()
-#200, 375, 425
-#31875000
+# 200, 375, 425
+# 31875000

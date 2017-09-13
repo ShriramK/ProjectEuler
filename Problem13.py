@@ -15,7 +15,7 @@ def problem_thirteen():
 		li.append(newline[:50])
 		
 	carry = 0
-	for i in range(50-1, -1, -1):
+	for i in range(50 - 1, -1, -1):
 		sum_of_nums = 0
 		for index in range(0, len(li)):
 			sum_of_nums += int(li[index][i])

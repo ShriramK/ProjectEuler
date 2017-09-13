@@ -8,4 +8,4 @@ def compute_sum_of_multiples_below_thousand():
 	print sum(filter(lambda x: x % 3 == 0 or x % 5 == 0, range(1, 1000)))
 
 compute_sum_of_multiples_below_thousand()
-#233168
+# 233168

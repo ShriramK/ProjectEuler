@@ -21,4 +21,4 @@ def problem_six():
 	print tot
 
 problem_six()
-#25164150
+# 25164150

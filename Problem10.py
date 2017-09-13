@@ -140,8 +140,8 @@ def problem_ten():
 	print end - start
 	print total
 problem_ten()
-#2.01 seconds
+# 2.01 seconds
 """
 
 problem_ten()
-#142913828922
+# 142913828922

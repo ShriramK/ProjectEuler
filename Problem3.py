@@ -12,7 +12,7 @@ def problem_three():
 	while num != 1:
 		while num % div == 0:
 			primes.append(div)
-			num = num/div
+			num = num / div
 		if div == 2:
 			div = 3
 		else:

@@ -29,4 +29,4 @@ def problem_seven():
 	print primes[10000]
 
 problem_seven()
-#104743
+# 104743

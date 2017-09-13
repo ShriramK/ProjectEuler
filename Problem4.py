@@ -1,6 +1,7 @@
+# -*- coding: utf-8 -*- 
 '''
 A palindromic number reads the same both ways. The largest palindrome made
-from the product of two #2-digit numbers is 9009 = 91 'x' 99.
+from the product of two 2-digit numbers is 9009 = 91 x 99.
 
 Find the largest palindrome made from the product of two 3-digit numbers.
 '''
@@ -17,10 +18,3 @@ def problem_four():
 			
 problem_four()
 # 906609
-'''
-This problem might generate
-sys:1: DeprecationWarning: Non-ASCII character '\xd7' in file Problem4.py
-on line 1, but no encoding declared;
-see http://www.python.org/peps/pep-0263.html for details
-http://docs.python.org/howto/unicode.html
-'''

@@ -51,4 +51,4 @@ def count_divisors(num):
 	return primes
 
 problem_five()
-#232792560
+# 232792560

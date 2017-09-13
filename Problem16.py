@@ -1,17 +1,20 @@
-#Problem 16
-#03 May 2002
+# -*- coding: utf-8 -*- 
+'''
+Problem 16
+03 May 2002
 
-#2^15 = 32768 and the sum of its digits is 3 + 2 + 7 + 6 + 8 = 26.
+2^15 = 32768 and the sum of its digits is 3 + 2 + 7 + 6 + 8 = 26.
 
-#What is the sum of the digits of the number 2^1000?
-#concept of Arbitrary precision arithmetic
-def problemSixteen():
-	num = pow(2,1000)
-	sum = 0
+What is the sum of the digits of the number 2^1000 ?
+concept of Arbitrary precision arithmetic
+'''
+
+def problem_sixteen():
+	num = pow(2, 1000)
+	sum_of_digits = 0
 	for digit in str(num):
-		sum += int(digit)
-	print sum
+		sum_of_digits += int(digit)
+	print sum_of_digits
 
-problemSixteen()
-#1366 
-
+problem_sixteen()
+# 1366

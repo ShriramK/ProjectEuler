@@ -1,11 +1,12 @@
+# -*- coding: utf-8 -*- 
 '''
 Problem 15
 19 April 2002
 
-Starting in the top left corner of a 2 by 2 grid, there are 6 routes
+Starting in the top left corner of a 2 x 2 grid, there are 6 routes
 ( without backtracking ) to the bottom right corner.
 
-How many routes are there through a 20 by 20 grid?
+How many routes are there through a 20 x 20 grid?
 
 http://grom.zeminvaders.net/blog/project-euler-problem-15#comment-1635
 '''
