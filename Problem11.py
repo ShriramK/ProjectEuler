@@ -1,7 +1,8 @@
-#Problem 11
-#22 February 2002
+# Problem 11
+# 22 February 2002
 
-#In the 20x20 grid below, four numbers along a diagonal line have been marked in red.
+# In the 20x20 grid below, four numbers along a diagonal line have been
+# marked in red.
 
 grid = [(8, 2, 22, 97, 38, 15, 0, 40, 0, 75, 4, 5, 7, 78, 52, 12, 50, 77, 91, 8),
 (49, 49, 99, 40, 17, 81, 18, 57, 60, 87, 17, 40, 98, 43, 69, 48, 4, 56, 62, 0),
@@ -24,11 +25,14 @@ grid = [(8, 2, 22, 97, 38, 15, 0, 40, 0, 75, 4, 5, 7, 78, 52, 12, 50, 77, 91, 8)
 (20, 73, 35, 29, 78, 31, 90, 1, 74, 31, 49, 71, 48, 86, 81, 16, 23, 57, 5, 54),
 (1, 70, 54, 71, 83, 51, 54, 69, 16, 92, 33, 48, 61, 43, 52, 1, 89, 19, 67, 48)]
 
-#The product of these numbers is 26 x 63 x 78 x 14 = 1788696.
+# The product of these numbers is 26 x 63 x 78 x 14 = 1788696.
 
-#What is the greatest product of four adjacent numbers in any direction (up, down, left, right, or diagonally) in the 20x20 grid?
+'''
+What is the greatest product of four adjacent numbers in any direction
+(up, down, left, right, or diagonally) in the 20x20 grid?
+'''
 
-def problemEleven():
+def problem_eleven():
 	ans = horizontal()	
 	vmax = vertical()
 	if ans < vmax:
@@ -44,47 +48,50 @@ def problemEleven():
 def horizontal():
 	hmax = 0
 	for row in grid:
-		max = row[0]*row[1]*row[2]*row[3]
-		if max > hmax:
-			hmax = max
+		max_num = row[0] * row[1] * row[2] * row[3]
+		if max_num > hmax:
+			hmax = max_num
 		for pos in range(4, 20):
-			if row[pos-4] != 0:
-				max /= row[pos-4]
-			max *= row[pos]
-			if max > hmax:
-				hmax = max
+			if row[pos - 4] != 0:
+				max_num /= row[pos - 4]
+			max_num *= row[pos]
+			if max_num > hmax:
+				hmax = max_num
 	return hmax
 
 def vertical():
 	vmax = 0
 	for col in range(0, 20):
-		max = grid[0][col]*grid[1][col]*grid[2][col]*grid[3][col]
-		if max > vmax:
-			vmax = max
+		max_num = grid[0][col] * grid[1][col] * grid[2][col] * grid[3][col]
+		if max_num > vmax:
+			vmax = max_num
 		for pos in range(4, 20):
-			if grid[pos-4][col] != 0:
-				max /= grid[pos-4][col]
-			max *= grid[pos][col]
-			if max > vmax:
-				vmax = max
+			if grid[pos - 4][col] != 0:
+				max_num /= grid[pos - 4][col]
+			max_num *= grid[pos][col]
+			if max_num > vmax:
+				vmax = max_num
 	return vmax
 
-#l2r or r2l
+# l2r or r2l
 def diagonal(direction):
 	dmax = 0
 	if dir is 'l2r':
-		for rownum in range(0,17):
-			for colnum in range(0,17):
-				max = grid[rownum][colnum]*grid[rownum+1][colnum+1]*grid[rownum+2][colnum+2]*grid[rownum+3][colnum+3]
-				if max > dmax:
-					dmax = max
-	else:#'r2l'
-		for rownum in range(0,17):
-			for colnum in range(19,2,-1):
-				max = grid[rownum][colnum]*grid[rownum+1][colnum-1]*grid[rownum+2][colnum-2]*grid[rownum+3][colnum-3]
-				if max > dmax:
-					dmax = max
+		for rownum in range(0, 17):
+			for colnum in range(0, 17):
+				max_num = grid[rownum][colnum] * grid[rownum + 1][colnum + 1]
+				max_num *= grid[rownum + 2][colnum + 2]
+				max_num *= grid[rownum + 3][colnum + 3]
+				if max_num > dmax:
+					dmax = max_num
+	else: # 'r2l'
+		for rownum in range(0, 17):
+			for colnum in range(19, 2, -1):
+				max_num = grid[rownum][colnum] * grid[rownum + 1][colnum - 1]
+				max_num *= grid[rownum + 2][colnum - 2]
+				max_num *= grid[rownum + 3][colnum - 3]
+				if max_num > dmax:
+					dmax = max_num
 	return dmax
 
-
-print problemEleven()
+print problem_eleven()

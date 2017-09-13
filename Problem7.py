@@ -1,17 +1,22 @@
-#By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
+'''
+By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see
+that the 6th prime is 13.
 
-#What is the 10 001st prime number?
+What is the 10 001st prime number?
 
-#Find a way to optimize it further or a different approach to solve it in milliseconds.
+Todo:
+Find a way to optimize it further or a different approach to solve it in
+milliseconds.
+'''
 
-def problemSeven():
+def problem_seven():
 	primes = []
 	primes.append(2)
 	num = 3
 	while True:
 		val = True
 		for i in primes:
-			if num%i == 0:
+			if num % i == 0:
 				val = False
 				break
 		if val == True:
@@ -23,5 +28,5 @@ def problemSeven():
 			break
 	print primes[10000]
 
-problemSeven()
+problem_seven()
 #104743
