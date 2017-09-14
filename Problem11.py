@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*- 
-'''
-Problem 11
+'''Problem 11
 22 February 2002
 
 In the 20 x 20 grid below, four numbers along a diagonal line have been

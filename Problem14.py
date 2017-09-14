@@ -1,5 +1,4 @@
-'''
-Problem 14
+'''Problem 14
 05 April 2002
 
 The following iterative sequence is defined for the set of positive integers:

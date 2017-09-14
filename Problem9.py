@@ -1,5 +1,4 @@
-'''
-Problem 9
+'''Problem 9
 25 January 2002
 
 A Pythagorean triplet is a set of three natural numbers, a < b < c, for which,

@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*- 
-'''
-Problem 20
+'''Problem 20
 21 June 2002
 
 n! means n × (n - 1) × ... × 3 × 2 × 1

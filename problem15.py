@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*- 
-'''
-Problem 15
+'''Problem 15
 19 April 2002
 
 Starting in the top left corner of a 2 x 2 grid, there are 6 routes

@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*- 
-'''
-Problem 16
+'''Problem 16
 03 May 2002
 
 2^15 = 32768 and the sum of its digits is 3 + 2 + 7 + 6 + 8 = 26.
