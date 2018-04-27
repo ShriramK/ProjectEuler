@@ -10,9 +10,7 @@ concept of Arbitrary precision arithmetic
 
 def problem_sixteen():
 	num = pow(2, 1000)
-	sum_of_digits = 0
-	for digit in str(num):
-		sum_of_digits += int(digit)
+	sum_of_digits = sum(int(digit) for digit in str(num))
 	print sum_of_digits
 
 problem_sixteen()

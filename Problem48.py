@@ -5,11 +5,9 @@ Find the last ten digits of the series, 11 + 22 + 33 + ... + 10001000.
 '''
 
 def problem_fortyeight():
-	sum_of_nums = 0 
-	for i in range(1,1001):
-		sum_of_nums += pow(i,i)
-	strsum = str(sum_of_nums)
-	print strsum[len(strsum)-10:]
+	sum_of_nums = sum(pow(i, i) for i in range(1, 1001))
+	sum_str = str(sum_of_nums)
+	print sum_str[len(sum_str)-10:]
 
 problem_fortyeight()
 # 9110846700

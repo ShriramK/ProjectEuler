@@ -13,10 +13,8 @@ Find the sum of the digits in the number 100!
 import math
 
 def problem_twenty():
-	sum_of_digits = 0
 	num = math.factorial(100)
-	for digit in str(num):
-		sum_of_digits += int(digit)
+	sum_of_digits = sum(int(each) for each in str(num))
 	print sum_of_digits
 
 problem_twenty()

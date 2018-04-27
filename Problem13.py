@@ -16,8 +16,7 @@ def problem_thirteen():
 	carry = 0
 	for i in range(50 - 1, -1, -1):
 		sum_of_nums = 0
-		for index in range(0, len(li)):
-			sum_of_nums += int(li[index][i])
+		sum_of_nums = sum(int(li[index][i]) for index in range(0, len(li)))
 		sum_of_nums += carry
 		carry = int(str(sum_of_nums)[:-1])
 		ans = str(sum_of_nums)[-1] + ans

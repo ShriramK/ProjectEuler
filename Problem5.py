@@ -9,6 +9,8 @@ maintain array for 2s, 3s, 5s, and other numbers
 maintain global array prefilled with -1
 '''
 
+from operator import imul
+
 def problem_five():
 	lcm = 2520
 	lcm_li = count_divisors(lcm)
@@ -24,7 +26,7 @@ def problem_five():
 				lcm_dict[item] = li_dict[item]
 	ans = 1
 	for item in lcm_dict:
-		ans *= pow(item, lcm_dict[item])
+		ans = imul(ans, pow(item, lcm_dict[item]))
 	print ans
 	
 def convert_list_to_dict(list_of_integers):
