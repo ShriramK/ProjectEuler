@@ -7,20 +7,20 @@ Todo:
 Find a way to optimize it further or a different approach to solve it in
 milliseconds.
 '''
+def is_prime(num, primes):
+	for each in primes[1:]:
+		if num % each == 0:
+			return False
+	return True
 
 def problem_seven():
 	primes = []
 	primes.append(2)
 	num = 3
 	while True:
-		val = True
-		for i in primes:
-			if num % i == 0:
-				val = False
-				break
-		if val == True:
+		if is_prime(num, primes):
 			primes.append(num)
-		num += 1
+		num += 2
 		#if len(primes) == 5000:
 			#print len(primes)
 		if len(primes) == 10001:
