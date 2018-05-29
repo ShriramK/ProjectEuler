@@ -13,6 +13,7 @@ Find the product abc.
  range end values for i,j,k could be optimized further
 '''
 
+# import itertools
 # import sys
 
 # using generator expression
