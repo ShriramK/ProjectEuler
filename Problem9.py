@@ -17,14 +17,14 @@ Find the product abc.
 # import sys
 
 # using generator expression
-def problem_nine():
+'''def problem_nine():
 	for each in ((i, j, k) for i in range(1, 400) for j in range(i+1, 400) for k in range(j+1, 500)):
 		i, j, k = each
 		if i * j + 1000 * k == 500000 and \
 			pow(i, 2) + pow(j, 2) == pow(k, 2):
 			print i, j, k
 			print i * j * k
-			return
+			return'''
 
 ''' # itertools version
 def problem_nine():
@@ -46,7 +46,26 @@ def problem_nine():
 					pow(i, 2) + pow(j, 2) == pow(k, 2):
 					print i, j, k
 					print i * j * k
+					return
 					#sys.exit(1)'''
+
+# using generator function
+def integers(start, stop):
+	for each in xrange(start, stop):
+		yield each
+
+def problem_nine():
+	for i in integers(1, 400):
+		for j in integers(i+1, 400):
+			for k in integers(j+1, 500):
+				if i * j + 1000 * k == 500000 and \
+					pow(i, 2) + pow(j, 2) == pow(k, 2):
+					print i, j, k
+					print i * j * k
+					return
+
+
+
 problem_nine()
 # 200, 375, 425
 # 31875000
